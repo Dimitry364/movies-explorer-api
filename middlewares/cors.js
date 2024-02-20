@@ -1,6 +1,6 @@
 const allowedCors = [
-  'https://yarushkin.practicum.nomoredomainsmonster.ru',
-  'http://yarushkin.practicum.nomoredomainsmonster.ru',
+  'https://yarushkin.nomoredomainswork.ru',
+  'http://yarushkin.nomoredomainswork.ru',
   'http://localhost:3000',
 ];
 
