@@ -4,15 +4,12 @@ const usersRouter = require('./users');
 const moviesRouter = require('./movies');
 const login = require('./signin');
 const createUser = require('./signup');
+const { crashTest } = require('../utils/crashTest');
 const auth = require('../middlewares/auth');
 
 const NotFoundError = require('../errors/NotFoundError');
 
-router.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадет');
-  }, 0);
-});
+router.get('/crash-test', crashTest);
 
 router.use('/signin', login);
 router.use('/signup', createUser);
